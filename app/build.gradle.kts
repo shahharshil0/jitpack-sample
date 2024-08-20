@@ -66,5 +66,5 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-//    implementation("com.github.shahharshil0:jitpack-sample:0.0.2")
+    implementation("com.github.shahharshil0:jitpack-sample:0.0.4")
 }
