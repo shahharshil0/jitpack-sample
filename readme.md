@@ -1,0 +1,1 @@
+[![](https://jitpack.io/v/username/repository.svg)](https://jitpack.io/#username/repository)
