@@ -1,1 +1,1 @@
-[![](https://jitpack.io/v/username/repository.svg)](https://jitpack.io/#username/repository)
+[![](https://jitpack.io/v/username/repository.svg)](https://jitpack.io/#shahharshil0/jitpack-sample)
