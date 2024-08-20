@@ -21,3 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "Jitpack Sample"
 include(":app")
+include(":app:mylibrary")
+include(":mylibrary")
