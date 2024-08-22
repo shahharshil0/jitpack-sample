@@ -31,14 +31,14 @@ android {
     kotlinOptions {
         jvmTarget = "17"
     }
-    publishing {
-        publishing {
-            singleVariant("release") {
-                withSourcesJar()
-                withJavadocJar()
-            }
-        }
-    }
+//    publishing {
+//        publishing {
+//            singleVariant("release") {
+//                withSourcesJar()
+//                withJavadocJar()
+//            }
+//        }
+//    }
 }
 
 dependencies {
