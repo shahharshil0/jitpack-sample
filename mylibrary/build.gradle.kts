@@ -61,7 +61,6 @@ afterEvaluate {
         publications {
             val release by publications.registering(MavenPublication::class) {
                 from(components["release"])
-                artifact(sourcesJar.get())
                 artifactId = "lib2"
                 groupId = "com.example.jitpackdemo"
                 version = "0.0.7"
