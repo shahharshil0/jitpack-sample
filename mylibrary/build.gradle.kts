@@ -51,15 +51,20 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 }
 
-publishing {
-    publications {
-        create("release", MavenPublication::class) {
-            groupId = "com.example.android.jitpacksample"
-            artifactId = "mylibrary"
-            version = "1.0.0"
+val sourcesJar by tasks.registering(Jar::class) {
+    archiveClassifier.set("sources")
+    from(android.sourceSets.getByName("main").java.srcDirs)
+}
 
-            afterEvaluate {
+afterEvaluate {
+    publishing {
+        publications {
+            val release by publications.registering(MavenPublication::class) {
                 from(components["release"])
+                artifact(sourcesJar.get())
+                artifactId = "lib2"
+                groupId = "com.example.jitpackdemo"
+                version = "0.0.7"
             }
         }
     }
